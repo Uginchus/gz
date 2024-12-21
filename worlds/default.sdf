@@ -154,6 +154,17 @@
         <iterations>1</iterations>
       </plugin>
       <plugin name="Entity tree" filename="EntityTree"/>
+
+      <!-- Window for image from camera -->
+      <plugin filename="ImageDisplay" name="Full 2D">
+        <topic>boxes_full_2d_image</topic>
+        <gz-gui>
+          <title>Full 2D</title>
+          <property key="state" type="string">docked</property>
+          <property type="double" key="height">400</property>
+          <property type="double" key="width">600</property>
+        </gz-gui>
+      </plugin>
     </gui>
     <gravity>0 0 -9.8</gravity>
     <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
