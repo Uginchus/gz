@@ -47,8 +47,8 @@
           <emissive>0 0 0 1</emissive>
         </material>
       </visual>
-      <sensor name="full_2d" type="boundingbox_camera">
-        <topic>boxes_full_2d</topic>
+      <sensor name="mono_cam" type="boundingbox_camera">
+        <topic>camera_device</topic>
         <camera>
           <box_type>full_2d</box_type>
           <horizontal_fov>1.047</horizontal_fov>
@@ -73,8 +73,8 @@
       <gravity>true</gravity>
       <velocity_decay/>
     </link>
-    <!--<plugin filename="ImagePublisherPlugin"
+    <plugin filename="ImagePublisherPlugin"
             name="images::ImagePublisherPlugin">
-    </plugin>-->
+    </plugin>
   </model>
 </sdf>
