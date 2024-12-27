@@ -90,7 +90,8 @@ def main():
     # Launch gazebo simulation
     print('> Launching gazebo simulation...')
     if not args.dryrun:
-        cmd = f'GZ_SIM_RESOURCE_PATH={args.model_store}/models gz sim -r {args.model_store}/worlds/{args.world}.sdf'
+        worlds_path = f'/home/ugi/pragma/Gazebo/gazebo_harmonic_custom/env/scenario'
+        cmd = f'GZ_SIM_RESOURCE_PATH={args.model_store}/models gz sim -r {worlds_path}/{args.world}.sdf'
         if args.headless:
             cmd = f'{cmd} -s'
 
